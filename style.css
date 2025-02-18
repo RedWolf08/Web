@@ -1,0 +1,1002 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.preview-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.preview-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.preview-description {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #666;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Hubot Sans", serif;
+  color: #c0b8b8;
+}
+
+.Main-Card {
+  color: #333;
+  font-size: 1.5rem;
+  overflow: hidden;
+  background-color: rgba(29, 29, 29, 0.5);
+  border-radius: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 30%;
+  height: 80%;
+  border: 3px solid #555252;
+  z-index: 1;
+  box-shadow: 0 0 10px #555252; /* Added blur to border */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Added blur to the background */
+}
+
+.Name-Image {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -185%);
+  padding: 20px;
+  width: 30%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.Info-Panel {
+  z-index: 2;
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -185%);
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 30%;
+  height: 20%;
+  border-top: 2px solid #555252;
+}
+
+#Name {
+  position: absolute;
+  font-size: 5.5rem;
+  font-weight: 650;
+  padding-left: 140px;
+  top: -32px; /* Adjust this value to move the text further up or down */
+}
+
+#Name-Text-Up {
+  font-weight: 450;
+  padding-left: 24px;
+  text-decoration-line: underline;
+}
+
+#Avatar-Image {
+  width: 120px;
+  height: 120px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  border-radius: 50%;
+  overflow: hidden;
+  user-drag: none;
+}
+
+html, body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgb(184, 69, 88), rgb(54, 53, 53));
+  z-index: -1;
+}
+
+.star {
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  box-shadow: 1599px, 213px, rgba(255, 255, 255, 0.678), 995px, 818px, rgba(255, 255, 255, 0.678), 1739px, 713px, rgba(255, 255, 255, 0.678), 1251px, 651px, rgba(255, 255, 255, 0.678), 453px, 838px, rgba(255, 255, 255, 0.678), 622px, 966px, rgba(255, 255, 255, 0.678), 1073px, 286px, rgba(255, 255, 255, 0.678), 1245px, 314px, rgba(255, 255, 255, 0.678), 983px, 887px, rgba(255, 255, 255, 0.678), 1718px, 863px, rgba(255, 255, 255, 0.678), 422px, 53px, rgba(255, 255, 255, 0.678), 1241px, 607px, rgba(255, 255, 255, 0.678), 825px, 926px, rgba(255, 255, 255, 0.678), 1619px, 468px, rgba(255, 255, 255, 0.678), 542px, 356px, rgba(255, 255, 255, 0.678), 772px, 565px, rgba(255, 255, 255, 0.678), 1094px, 750px, rgba(255, 255, 255, 0.678), 853px, 758px, rgba(255, 255, 255, 0.678), 959px, 361px, rgba(255, 255, 255, 0.678), 233px, 823px, rgba(255, 255, 255, 0.678), 1053px, 867px, rgba(255, 255, 255, 0.678), 1436px, 692px, rgba(255, 255, 255, 0.678), 423px, 836px, rgba(255, 255, 255, 0.678), 1547px, 502px, rgba(255, 255, 255, 0.678), 247px, 359px, rgba(255, 255, 255, 0.678), 684px, 226px, rgba(255, 255, 255, 0.678), 356px, 509px, rgba(255, 255, 255, 0.678), 196px, 945px, rgba(255, 255, 255, 0.678), 234px, 555px, rgba(255, 255, 255, 0.678), 1329px, 125px, rgba(255, 255, 255, 0.678), 664px, 205px, rgba(255, 255, 255, 0.678), 1842px, 850px, rgba(255, 255, 255, 0.678), 1237px, 824px, rgba(255, 255, 255, 0.678), 1783px, 866px, rgba(255, 255, 255, 0.678), 1795px, 72px, rgba(255, 255, 255, 0.678), 60px, 379px, rgba(255, 255, 255, 0.678), 383px, 31px, rgba(255, 255, 255, 0.678), 1227px, 449px, rgba(255, 255, 255, 0.678), 844px, 504px, rgba(255, 255, 255, 0.678), 89px, 240px, rgba(255, 255, 255, 0.678), 1002px, 516px, rgba(255, 255, 255, 0.678), 722px, 119px, rgba(255, 255, 255, 0.678), 1681px, 591px, rgba(255, 255, 255, 0.678), 367px, 420px, rgba(255, 255, 255, 0.678), 1689px, 579px, rgba(255, 255, 255, 0.678), 878px, 589px, rgba(255, 255, 255, 0.678), 860px, 929px, rgba(255, 255, 255, 0.678), 637px, 504px, rgba(255, 255, 255, 0.678), 788px, 190px, rgba(255, 255, 255, 0.678), 781px, 305px, rgba(255, 255, 255, 0.678), 299px, 602px, rgba(255, 255, 255, 0.678), 347px, 992px, rgba(255, 255, 255, 0.678), 40px, 178px, rgba(255, 255, 255, 0.678), 580px, 945px, rgba(255, 255, 255, 0.678), 767px, 718px, rgba(255, 255, 255, 0.678), 1134px, 719px, rgba(255, 255, 255, 0.678), 1720px, 59px, rgba(255, 255, 255, 0.678), 1397px, 38px, rgba(255, 255, 255, 0.678), 363px, 967px, rgba(255, 255, 255, 0.678), 1054px, 525px, rgba(255, 255, 255, 0.678), 724px, 711px, rgba(255, 255, 255, 0.678), 4px, 812px, rgba(255, 255, 255, 0.678), 798px, 679px, rgba(255, 255, 255, 0.678), 1663px, 675px, rgba(255, 255, 255, 0.678), 66px, 471px, rgba(255, 255, 255, 0.678), 496px, 147px, rgba(255, 255, 255, 0.678), 1708px, 794px, rgba(255, 255, 255, 0.678), 1825px, 596px, rgba(255, 255, 255, 0.678), 1917px, 384px, rgba(255, 255, 255, 0.678), 483px, 275px, rgba(255, 255, 255, 0.678), 770px, 480px, rgba(255, 255, 255, 0.678), 813px, 237px, rgba(255, 255, 255, 0.678), 620px, 869px, rgba(255, 255, 255, 0.678), 810px, 519px, rgba(255, 255, 255, 0.678), 985px, 381px, rgba(255, 255, 255, 0.678), 394px, 355px, rgba(255, 255, 255, 0.678), 847px, 693px, rgba(255, 255, 255, 0.678), 783px, 752px, rgba(255, 255, 255, 0.678), 1249px, 181px, rgba(255, 255, 255, 0.678), 345px, 526px, rgba(255, 255, 255, 0.678), 1072px, 556px, rgba(255, 255, 255, 0.678), 190px, 209px, rgba(255, 255, 255, 0.678), 44px, 721px, rgba(255, 255, 255, 0.678), 83px, 394px, rgba(255, 255, 255, 0.678), 385px, 994px, rgba(255, 255, 255, 0.678), 848px, 421px, rgba(255, 255, 255, 0.678), 1818px, 425px, rgba(255, 255, 255, 0.678), 1535px, 279px, rgba(255, 255, 255, 0.678), 1088px, 999px, rgba(255, 255, 255, 0.678), 1230px, 578px, rgba(255, 255, 255, 0.678), 234px, 634px, rgba(255, 255, 255, 0.678), 371px, 794px, rgba(255, 255, 255, 0.678), 1102px, 664px, rgba(255, 255, 255, 0.678), 947px, 787px, rgba(255, 255, 255, 0.678), 1002px, 921px, rgba(255, 255, 255, 0.678), 926px, 444px, rgba(255, 255, 255, 0.678), 189px, 525px, rgba(255, 255, 255, 0.678), 559px, 477px, rgba(255, 255, 255, 0.678), 1633px, 970px, rgba(255, 255, 255, 0.678), 581px, 874px, rgba(255, 255, 255, 0.678), 292px, 922px, rgba(255, 255, 255, 0.678), 1050px, 601px, rgba(255, 255, 255, 0.678), 1189px, 207px, rgba(255, 255, 255, 0.678), 1287px, 532px, rgba(255, 255, 255, 0.678), 692px, 384px, rgba(255, 255, 255, 0.678), 826px, 57px, rgba(255, 255, 255, 0.678), 277px, 204px, rgba(255, 255, 255, 0.678), 1450px, 162px, rgba(255, 255, 255, 0.678), 1441px, 250px, rgba(255, 255, 255, 0.678), 1855px, 845px, rgba(255, 255, 255, 0.678), 1111px, 746px, rgba(255, 255, 255, 0.678), 966px, 941px, rgba(255, 255, 255, 0.678), 581px, 935px, rgba(255, 255, 255, 0.678), 1058px, 350px, rgba(255, 255, 255, 0.678), 1733px, 685px, rgba(255, 255, 255, 0.678), 26px, 237px, rgba(255, 255, 255, 0.678), 1032px, 841px, rgba(255, 255, 255, 0.678), 1627px, 340px, rgba(255, 255, 255, 0.678), 1380px, 643px, rgba(255, 255, 255, 0.678), 1306px, 367px, rgba(255, 255, 255, 0.678), 884px, 196px, rgba(255, 255, 255, 0.678), 702px, 662px, rgba(255, 255, 255, 0.678), 841px, 738px, rgba(255, 255, 255, 0.678), 1619px, 313px, rgba(255, 255, 255, 0.678), 1747px, 675px, rgba(255, 255, 255, 0.678), 357px, 652px, rgba(255, 255, 255, 0.678), 1027px, 725px, rgba(255, 255, 255, 0.678), 1237px, 645px, rgba(255, 255, 255, 0.678), 1372px, 283px, rgba(255, 255, 255, 0.678), 349px, 8px, rgba(255, 255, 255, 0.678), 1896px, 402px, rgba(255, 255, 255, 0.678), 945px, 950px, rgba(255, 255, 255, 0.678), 645px, 491px, rgba(255, 255, 255, 0.678), 235px, 536px, rgba(255, 255, 255, 0.678), 654px, 906px, rgba(255, 255, 255, 0.678), 464px, 150px, rgba(255, 255, 255, 0.678), 1056px, 507px, rgba(255, 255, 255, 0.678), 1361px, 760px, rgba(255, 255, 255, 0.678), 579px, 674px, rgba(255, 255, 255, 0.678), 797px, 160px, rgba(255, 255, 255, 0.678), 1113px, 724px, rgba(255, 255, 255, 0.678), 1374px, 943px, rgba(255, 255, 255, 0.678), 1713px, 422px, rgba(255, 255, 255, 0.678), 323px, 676px, rgba(255, 255, 255, 0.678), 984px, 985px, rgba(255, 255, 255, 0.678), 751px, 883px, rgba(255, 255, 255, 0.678), 465px, 452px, rgba(255, 255, 255, 0.678), 673px, 783px, rgba(255, 255, 255, 0.678), 821px, 317px, rgba(255, 255, 255, 0.678), 1676px, 384px, rgba(255, 255, 255, 0.678), 1474px, 609px, rgba(255, 255, 255, 0.678), 772px, 579px, rgba(255, 255, 255, 0.678), 1603px, 396px, rgba(255, 255, 255, 0.678), 1333px, 214px, rgba(255, 255, 255, 0.678), 1866px, 588px, rgba(255, 255, 255, 0.678), 304px, 492px, rgba(255, 255, 255, 0.678), 1317px, 743px, rgba(255, 255, 255, 0.678), 1657px, 284px, rgba(255, 255, 255, 0.678), 465px, 101px, rgba(255, 255, 255, 0.678), 820px, 183px, rgba(255, 255, 255, 0.678), 1512px, 485px, rgba(255, 255, 255, 0.678), 861px, 733px, rgba(255, 255, 255, 0.678), 1458px, 145px, rgba(255, 255, 255, 0.678), 1742px, 152px, rgba(255, 255, 255, 0.678), 21px, 226px, rgba(255, 255, 255, 0.678), 1461px, 671px, rgba(255, 255, 255, 0.678), 638px, 959px, rgba(255, 255, 255, 0.678), 283px, 865px, rgba(255, 255, 255, 0.678), 463px, 315px, rgba(255, 255, 255, 0.678), 458px, 918px, rgba(255, 255, 255, 0.678), 760px, 648px, rgba(255, 255, 255, 0.678), 744px, 786px, rgba(255, 255, 255, 0.678), 1888px, 412px, rgba(255, 255, 255, 0.678), 167px, 757px, rgba(255, 255, 255, 0.678), 74px, 443px, rgba(255, 255, 255, 0.678), 1217px, 582px, rgba(255, 255, 255, 0.678), 1234px, 5px, rgba(255, 255, 255, 0.678), 227px, 198px, rgba(255, 255, 255, 0.678), 1575px, 247px, rgba(255, 255, 255, 0.678), 1681px, 717px, rgba(255, 255, 255, 0.678), 597px, 743px, rgba(255, 255, 255, 0.678), 834px, 165px, rgba(255, 255, 255, 0.678), 365px, 692px, rgba(255, 255, 255, 0.678), 640px, 941px, rgba(255, 255, 255, 0.678), 930px, 209px, rgba(255, 255, 255, 0.678), 1256px, 797px, rgba(255, 255, 255, 0.678), 1006px, 264px, rgba(255, 255, 255, 0.678), 1758px, 57px, rgba(255, 255, 255, 0.678), 1139px, 115px, rgba(255, 255, 255, 0.678), 283px, 936px, rgba(255, 255, 255, 0.678), 953px, 101px, rgba(255, 255, 255, 0.678), 503px, 883px, rgba(255, 255, 255, 0.678), 183px, 34px, rgba(255, 255, 255, 0.678), 218px, 987px, rgba(255, 255, 255, 0.678), 1699px, 285px, rgba(255, 255, 255, 0.678), 1449px, 185px, rgba(255, 255, 255, 0.678), 679px, 976px, rgba(255, 255, 255, 0.678), 1747px, 792px, rgba(255, 255, 255, 0.678), 1170px, 160px, rgba(255, 255, 255, 0.678), 1589px, 928px, rgba(255, 255, 255, 0.678), 651px, 524px, rgba(255, 255, 255, 0.678), 1704px, 598px, rgba(255, 255, 255, 0.678), 1003px, 219px, rgba(255, 255, 255, 0.678), 1845px, 115px, rgba(255, 255, 255, 0.678), 529px, 103px, rgba(255, 255, 255, 0.678), 1676px, 363px, rgba(255, 255, 255, 0.678), 412px, 711px, rgba(255, 255, 255, 0.678), 838px, 846px, rgba(255, 255, 255, 0.678), 1701px, 508px, rgba(255, 255, 255, 0.678), 1446px, 922px, rgba(255, 255, 255, 0.678), 614px, 78px, rgba(255, 255, 255, 0.678), 420px, 832px, rgba(255, 255, 255, 0.678), 4px, 850px, rgba(255, 255, 255, 0.678), 487px, 260px, rgba(255, 255, 255, 0.678), 358px, 365px, rgba(255, 255, 255, 0.678), 217px, 479px, rgba(255, 255, 255, 0.678), 1372px, 382px, rgba(255, 255, 255, 0.678), 1199px, 337px, rgba(255, 255, 255, 0.678), 1058px, 887px, rgba(255, 255, 255, 0.678), 193px, 182px, rgba(255, 255, 255, 0.678), 1095px, 539px, rgba(255, 255, 255, 0.678), 428px, 656px, rgba(255, 255, 255, 0.678), 663px, 572px, rgba(255, 255, 255, 0.678), 421px, 188px, rgba(255, 255, 255, 0.678), 1642px, 441px, rgba(255, 255, 255, 0.678), 1853px, 952px, rgba(255, 255, 255, 0.678), 544px, 303px, rgba(255, 255, 255, 0.678), 231px, 564px, rgba(255, 255, 255, 0.678), 1025px, 729px, rgba(255, 255, 255, 0.678), 1826px, 483px, rgba(255, 255, 255, 0.678), 200px, 82px, rgba(255, 255, 255, 0.678), 699px, 609px, rgba(255, 255, 255, 0.678), 324px, 200px, rgba(255, 255, 255, 0.678), 5px, 30px, rgba(255, 255, 255, 0.678), 870px, 724px, rgba(255, 255, 255, 0.678), 927px, 18px, rgba(255, 255, 255, 0.678), 1903px, 113px, rgba(255, 255, 255, 0.678), 592px, 639px, rgba(255, 255, 255, 0.678), 1773px, 440px, rgba(255, 255, 255, 0.678), 1285px, 818px, rgba(255, 255, 255, 0.678), 891px, 786px, rgba(255, 255, 255, 0.678), 1788px, 981px, rgba(255, 255, 255, 0.678), 181px, 575px, rgba(255, 255, 255, 0.678), 127px, 288px, rgba(255, 255, 255, 0.678), 1260px, 239px, rgba(255, 255, 255, 0.678), 1847px, 393px, rgba(255, 255, 255, 0.678), 177px, 454px, rgba(255, 255, 255, 0.678), 805px, 301px, rgba(255, 255, 255, 0.678), 318px, 715px, rgba(255, 255, 255, 0.678), 1522px, 35px, rgba(255, 255, 255, 0.678), 1364px, 888px, rgba(255, 255, 255, 0.678), 86px, 739px, rgba(255, 255, 255, 0.678), 886px, 733px, rgba(255, 255, 255, 0.678), 1481px, 744px, rgba(255, 255, 255, 0.678), 1248px, 753px, rgba(255, 255, 255, 0.678), 1684px, 666px, rgba(255, 255, 255, 0.678), 780px, 257px, rgba(255, 255, 255, 0.678), 194px, 896px, rgba(255, 255, 255, 0.678), 1804px, 957px, rgba(255, 255, 255, 0.678), 581px, 718px, rgba(255, 255, 255, 0.678), 873px, 231px, rgba(255, 255, 255, 0.678), 1374px, 805px, rgba(255, 255, 255, 0.678), 953px, 250px, rgba(255, 255, 255, 0.678), 692px, 87px, rgba(255, 255, 255, 0.678), 575px, 56px, rgba(255, 255, 255, 0.678), 1560px, 269px, rgba(255, 255, 255, 0.678), 48px, 365px, rgba(255, 255, 255, 0.678), 76px, 490px, rgba(255, 255, 255, 0.678), 1084px, 141px, rgba(255, 255, 255, 0.678), 458px, 252px, rgba(255, 255, 255, 0.678), 975px, 982px, rgba(255, 255, 255, 0.678), 1166px, 554px, rgba(255, 255, 255, 0.678), 1004px, 779px, rgba(255, 255, 255, 0.678), 1165px, 84px, rgba(255, 255, 255, 0.678), 1340px, 896px, rgba(255, 255, 255, 0.678), 823px, 144px, rgba(255, 255, 255, 0.678), 1847px, 194px, rgba(255, 255, 255, 0.678), 1580px, 700px, rgba(255, 255, 255, 0.678), 272px, 766px, rgba(255, 255, 255, 0.678), 548px, 907px, rgba(255, 255, 255, 0.678), 307px, 162px, rgba(255, 255, 255, 0.678), 27px, 463px, rgba(255, 255, 255, 0.678), 420px, 527px, rgba(255, 255, 255, 0.678), 1549px, 238px, rgba(255, 255, 255, 0.678), 1221px, 400px, rgba(255, 255, 255, 0.678), 1644px, 206px, rgba(255, 255, 255, 0.678), 448px, 479px, rgba(255, 255, 255, 0.678), 1574px, 300px, rgba(255, 255, 255, 0.678), 481px, 913px, rgba(255, 255, 255, 0.678), 806px, 305px, rgba(255, 255, 255, 0.678), 1054px, 951px, rgba(255, 255, 255, 0.678), 1504px, 277px, rgba(255, 255, 255, 0.678), 783px, 830px, rgba(255, 255, 255, 0.678), 1414px, 108px, rgba(255, 255, 255, 0.678), 922px, 669px, rgba(255, 255, 255, 0.678), 391px, 586px, rgba(255, 255, 255, 0.678), 681px, 966px, rgba(255, 255, 255, 0.678), 697px, 371px, rgba(255, 255, 255, 0.678), 665px, 423px, rgba(255, 255, 255, 0.678), 1339px, 841px, rgba(255, 255, 255, 0.678), 547px, 382px, rgba(255, 255, 255, 0.678), 1672px, 507px, rgba(255, 255, 255, 0.678), 1338px, 951px, rgba(255, 255, 255, 0.678), 426px, 473px, rgba(255, 255, 255, 0.678), 76px, 342px, rgba(255, 255, 255, 0.678), 1090px, 495px, rgba(255, 255, 255, 0.678), 475px, 318px, rgba(255, 255, 255, 0.678), 124px, 351px, rgba(255, 255, 255, 0.678), 1387px, 722px, rgba(255, 255, 255, 0.678), 1595px, 683px, rgba(255, 255, 255, 0.678), 1551px, 226px, rgba(255, 255, 255, 0.678), 899px, 512px, rgba(255, 255, 255, 0.678), 1427px, 130px, rgba(255, 255, 255, 0.678), 589px, 772px, rgba(255, 255, 255, 0.678), 470px, 641px, rgba(255, 255, 255, 0.678), 1636px, 852px, rgba(255, 255, 255, 0.678), 1449px, 823px, rgba(255, 255, 255, 0.678), 1697px, 749px, rgba(255, 255, 255, 0.678), 598px, 871px, rgba(255, 255, 255, 0.678), 537px, 443px, rgba(255, 255, 255, 0.678), 87px, 292px, rgba(255, 255, 255, 0.678), 180px, 23px, rgba(255, 255, 255, 0.678), 1738px, 389px, rgba(255, 255, 255, 0.678), 1274px, 354px, rgba(255, 255, 255, 0.678), 1608px, 696px, rgba(255, 255, 255, 0.678), 1289px, 859px, rgba(255, 255, 255, 0.678), 1794px, 727px, rgba(255, 255, 255, 0.678), 921px, 151px, rgba(255, 255, 255, 0.678), 1129px, 908px, rgba(255, 255, 255, 0.678), 807px, 874px, rgba(255, 255, 255, 0.678), 1616px, 781px, rgba(255, 255, 255, 0.678), 1909px, 864px, rgba(255, 255, 255, 0.678), 652px, 954px, rgba(255, 255, 255, 0.678), 1462px, 626px, rgba(255, 255, 255, 0.678), 1122px, 866px, rgba(255, 255, 255, 0.678), 1576px, 445px, rgba(255, 255, 255, 0.678), 1301px, 856px, rgba(255, 255, 255, 0.678), 1026px, 527px, rgba(255, 255, 255, 0.678), 1717px, 410px, rgba(255, 255, 255, 0.678), 593px, 270px, rgba(255, 255, 255, 0.678), 1038px, 177px, rgba(255, 255, 255, 0.678), 582px, 430px, rgba(255, 255, 255, 0.678), 1128px, 27px, rgba(255, 255, 255, 0.678), 1208px, 518px, rgba(255, 255, 255, 0.678), 979px, 382px, rgba(255, 255, 255, 0.678), 1452px, 128px, rgba(255, 255, 255, 0.678), 1203px, 67px, rgba(255, 255, 255, 0.678), 98px, 368px, rgba(255, 255, 255, 0.678), 1680px, 836px, rgba(255, 255, 255, 0.678), 1868px, 80px, rgba(255, 255, 255, 0.678), 465px, 125px, rgba(255, 255, 255, 0.678), 1766px, 176px, rgba(255, 255, 255, 0.678), 393px, 131px, rgba(255, 255, 255, 0.678), 925px, 983px, rgba(255, 255, 255, 0.678), 1025px, 359px, rgba(255, 255, 255, 0.678), 180px, 494px, rgba(255, 255, 255, 0.678), 764px, 870px, rgba(255, 255, 255, 0.678), 500px, 835px, rgba(255, 255, 255, 0.678), 698px, 598px, rgba(255, 255, 255, 0.678), 1116px, 66px, rgba(255, 255, 255, 0.678), 51px, 79px, rgba(255, 255, 255, 0.678), 1209px, 330px, rgba(255, 255, 255, 0.678), 1403px, 450px, rgba(255, 255, 255, 0.678), 454px, 336px, rgba(255, 255, 255, 0.678), 1837px, 775px, rgba(255, 255, 255, 0.678), 891px, 879px, rgba(255, 255, 255, 0.678), 1791px, 369px, rgba(255, 255, 255, 0.678), 40px, 326px, rgba(255, 255, 255, 0.678), 1591px, 692px, rgba(255, 255, 255, 0.678), 620px, 235px, rgba(255, 255, 255, 0.678), 1223px, 768px, rgba(255, 255, 255, 0.678), 571px, 581px, rgba(255, 255, 255, 0.678), 873px, 167px, rgba(255, 255, 255, 0.678), 741px, 737px, rgba(255, 255, 255, 0.678), 150px, 173px, rgba(255, 255, 255, 0.678), 989px, 193px, rgba(255, 255, 255, 0.678), 1217px, 805px, rgba(255, 255, 255, 0.678), 1238px, 954px, rgba(255, 255, 255, 0.678), 1904px, 452px, rgba(255, 255, 255, 0.678), 1081px, 974px, rgba(255, 255, 255, 0.678), 1011px, 908px, rgba(255, 255, 255, 0.678), 1457px, 782px, rgba(255, 255, 255, 0.678), 1673px, 636px, rgba(255, 255, 255, 0.678), 187px, 601px, rgba(255, 255, 255, 0.678), 1777px, 928px, rgba(255, 255, 255, 0.678), 994px, 670px, rgba(255, 255, 255, 0.678), 1658px, 779px, rgba(255, 255, 255, 0.678), 1456px, 984px, rgba(255, 255, 255, 0.678), 1021px, 940px, rgba(255, 255, 255, 0.678), 1637px, 713px, rgba(255, 255, 255, 0.678), 78px, 904px, rgba(255, 255, 255, 0.678), 123px, 803px, rgba(255, 255, 255, 0.678), 1205px, 929px, rgba(255, 255, 255, 0.678), 1762px, 960px, rgba(255, 255, 255, 0.678), 1819px, 756px, rgba(255, 255, 255, 0.678), 1518px, 821px, rgba(255, 255, 255, 0.678), 1027px, 71px, rgba(255, 255, 255, 0.678), 241px, 131px, rgba(255, 255, 255, 0.678), 1445px, 921px, rgba(255, 255, 255, 0.678), 1713px, 40px, rgba(255, 255, 255, 0.678);
+  z-index: 0;
+}
+
+.simple-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: rgb(214, 214, 214);
+  z-index: 0;
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+}
+.meteor-1 {
+  position: absolute;
+  top: 145px;
+  left: 21%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.65s linear infinite;
+  animation-delay: 7s;
+}
+.meteor-1::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-2 {
+  position: absolute;
+  top: 97px;
+  left: 67%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3s linear infinite;
+  animation-delay: 2s;
+}
+.meteor-2::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-3 {
+  position: absolute;
+  top: 184px;
+  left: 80%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.9s linear infinite;
+  animation-delay: 5s;
+}
+.meteor-3::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-4 {
+  position: absolute;
+  top: 85px;
+  left: 87%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.25s linear infinite;
+  animation-delay: 10s;
+}
+.meteor-4::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-5 {
+  position: absolute;
+  top: 144px;
+  left: 69%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.45s linear infinite;
+  animation-delay: 11s;
+}
+.meteor-5::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-6 {
+  position: absolute;
+  top: 215px;
+  left: 98%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.1s linear infinite;
+  animation-delay: 9s;
+}
+.meteor-6::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-7 {
+  position: absolute;
+  top: 235px;
+  left: 80%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.45s linear infinite;
+  animation-delay: 6s;
+}
+.meteor-7::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-8 {
+  position: absolute;
+  top: 97px;
+  left: 73%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.9s linear infinite;
+  animation-delay: 15s;
+}
+.meteor-8::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-9 {
+  position: absolute;
+  top: 70px;
+  left: 55%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.8s linear infinite;
+  animation-delay: 5s;
+}
+.meteor-9::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-10 {
+  position: absolute;
+  top: 72px;
+  left: 34%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.15s linear infinite;
+  animation-delay: 7s;
+}
+.meteor-10::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-11 {
+  position: absolute;
+  top: 280px;
+  left: 24%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.45s linear infinite;
+  animation-delay: 6s;
+}
+.meteor-11::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-12 {
+  position: absolute;
+  top: 173px;
+  left: 79%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.4s linear infinite;
+  animation-delay: 3s;
+}
+.meteor-12::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-13 {
+  position: absolute;
+  top: 120px;
+  left: 53%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.6s linear infinite;
+  animation-delay: 2s;
+}
+.meteor-13::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-14 {
+  position: absolute;
+  top: 229px;
+  left: 81%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.45s linear infinite;
+  animation-delay: 15s;
+}
+.meteor-14::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-15 {
+  position: absolute;
+  top: 149px;
+  left: 63%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.55s linear infinite;
+  animation-delay: 8s;
+}
+.meteor-15::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-16 {
+  position: absolute;
+  top: 157px;
+  left: 85%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.8s linear infinite;
+  animation-delay: 7s;
+}
+.meteor-16::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-17 {
+  position: absolute;
+  top: 256px;
+  left: 26%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.85s linear infinite;
+  animation-delay: 15s;
+}
+.meteor-17::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-18 {
+  position: absolute;
+  top: 156px;
+  left: 56%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.8s linear infinite;
+  animation-delay: 14s;
+}
+.meteor-18::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-19 {
+  position: absolute;
+  top: 136px;
+  left: 90%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.6s linear infinite;
+  animation-delay: 6s;
+}
+.meteor-19::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-20 {
+  position: absolute;
+  top: 115px;
+  left: 66%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.3s linear infinite;
+  animation-delay: 5s;
+}
+.meteor-20::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-21 {
+  position: absolute;
+  top: 114px;
+  left: 86%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.3s linear infinite;
+  animation-delay: 9s;
+}
+.meteor-21::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-22 {
+  position: absolute;
+  top: 96px;
+  left: 11%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.45s linear infinite;
+  animation-delay: 10s;
+}
+.meteor-22::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-23 {
+  position: absolute;
+  top: 272px;
+  left: 11%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.4s linear infinite;
+  animation-delay: 14s;
+}
+.meteor-23::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-24 {
+  position: absolute;
+  top: 85px;
+  left: 87%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.65s linear infinite;
+  animation-delay: 15s;
+}
+.meteor-24::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-25 {
+  position: absolute;
+  top: 274px;
+  left: 69%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.95s linear infinite;
+  animation-delay: 1s;
+}
+.meteor-25::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-26 {
+  position: absolute;
+  top: 270px;
+  left: 26%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.6s linear infinite;
+  animation-delay: 5s;
+}
+.meteor-26::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-27 {
+  position: absolute;
+  top: 102px;
+  left: 59%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 4.35s linear infinite;
+  animation-delay: 5s;
+}
+.meteor-27::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-28 {
+  position: absolute;
+  top: 48px;
+  left: 75%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.75s linear infinite;
+  animation-delay: 15s;
+}
+.meteor-28::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-29 {
+  position: absolute;
+  top: 277px;
+  left: 93%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.7s linear infinite;
+  animation-delay: 4s;
+}
+.meteor-29::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-30 {
+  position: absolute;
+  top: 280px;
+  left: 58%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.35s linear infinite;
+  animation-delay: 6s;
+}
+.meteor-30::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-31 {
+  position: absolute;
+  top: 209px;
+  left: 42%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.25s linear infinite;
+  animation-delay: 13s;
+}
+.meteor-31::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-32 {
+  position: absolute;
+  top: 135px;
+  left: 40%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.3s linear infinite;
+  animation-delay: 6s;
+}
+.meteor-32::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-33 {
+  position: absolute;
+  top: 140px;
+  left: 30%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 3.85s linear infinite;
+  animation-delay: 2s;
+}
+.meteor-33::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-34 {
+  position: absolute;
+  top: 68px;
+  left: 99%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.8s linear infinite;
+  animation-delay: 6s;
+}
+.meteor-34::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+.meteor-35 {
+  position: absolute;
+  top: 106px;
+  left: 81%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1));
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: meteor 2.2s linear infinite;
+  animation-delay: 9s;
+}
+.meteor-35::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background-image: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px 3px #fff;
+}
+
+@keyframes meteor {
+  0% {
+    opacity: 1;
+    margin-left: 300px;
+    margin-top: -300px;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    margin-left: -300px;
+    margin-top: 300px;
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
