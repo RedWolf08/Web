@@ -1,27 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.preview-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.preview-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.preview-description {
-    font-size: 1.2rem;
-    margin-top: 5px;
-    color: #666;
-}
-
-
 html {
     overflow: hidden;
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+
 }
 
 body {
@@ -29,8 +16,9 @@ body {
     height: 100vh;
 
     font-family: "Hubot Sans", serif;
-    color: #c0b8b8;
+    color: #959da3;
 
+    
 }
 
 .Main-Card {
@@ -44,11 +32,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    width: 30%;
+    width: 35%;
     height: 80%;
-    border: 3px solid rgba($color: #555252, $alpha: 1);
+    border: 3px solid rgba($color: #3b3939, $alpha: 1);
     z-index: 1;
-    box-shadow: 0 0 10px rgba($color: #555252, $alpha: 1); /* Added blur to border */
+    box-shadow: 0 0 10px rgba($color: #3b3939, $alpha: 1); /* Added blur to border */
     backdrop-filter: blur(10px); /* Added blur to the background */
 }
 
@@ -84,6 +72,19 @@ body {
     border-top: 2px solid rgba($color: #555252, $alpha: 1);
 }
 
+.Text-Before-Main {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 24px;
+    padding-top: -20px;
+    margin-bottom: -5px;
+}
+
+.Text-Ul_Decor {
+    padding-left: 60px;
+    padding-top: -20px;
+}
+
 #Name {
     position: absolute;
     font-size: 5.5rem;
@@ -92,10 +93,22 @@ body {
     top: -32px; /* Adjust this value to move the text further up or down */
 }
 
-#Name-Text-Up {
-    font-weight: 450;
+#Name-Text-Up, #Info-Text-Up {
+    font-weight: 362;
     padding-left: 24px;
     text-decoration-line: underline;
+}
+
+#Info {
+    position: absolute;
+    padding-left: 35px;
+    top: 30px;
+    
+}
+
+p {
+    font-size: 1.05rem;
+    font-weight: 800;
 }
 
 #Avatar-Image {
